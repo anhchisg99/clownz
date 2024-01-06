@@ -12,14 +12,21 @@ export async function getProduct(){
 }
 export async function createProduct(product){
     try {
-        return await Product.create({
+        let product_list = {
             name:product.name,
             quantity:product.quantity,
             price:product.price,
             category: product.category,
             subCategory: product.subCategory,
-            "image.url":product.imageUrl
-        })
+            size:product.size,
+            image:product.image 
+        }
+        if(product.isVariant){
+            product_list["variantions"] = product.variantions
+
+        }
+        console.log(product_list)
+        return await Product.create(product_list)
         // return _product
 
     } catch (err) {

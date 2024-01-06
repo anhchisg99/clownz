@@ -18,11 +18,7 @@ const productSchema = new Schema({
         ref: "Category"
     },
     // desc:Array,
-    image: {
-
-        type:String
-
-    },
+    image:[String],
     short_name: {
         type: String
     },
@@ -31,7 +27,14 @@ const productSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "SubCategory"
     },
-    size: { type: String, enum: ["S", "M", "L"] }
+    variantions:[
+        {
+            dimensions:{color:String, size:{type:String,enum:["S","M","L"]}},
+            price:Number
+        }
+    ]   , 
+    // color:{type:String},
+    // size: { type: String, enum: ["S", "M", "L"] }
 }, { timestamps: true })
 
 productSchema.virtual('finalPrice').get(function () {
