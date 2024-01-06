@@ -7,6 +7,7 @@ productRoute.post('/create-product',productController.createProduct)
 productRoute.get('/get-all-product',productController.getAllProduct)
 productRoute.post('/get-product-based-on-category',productController.getProductBasedOnCategory)
 productRoute.post('/get-product-based-on-subcategory',productController.getProductBasedOnSubCategory)
+productRoute.post('/filter-product',productController.filterProduct)
 
 
 export default productRoute

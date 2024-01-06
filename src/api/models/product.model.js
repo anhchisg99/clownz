@@ -20,15 +20,7 @@ const productSchema = new Schema({
     // desc:Array,
     image: {
 
-        public_id: {
-            type: String,
-            // required: true
-        },
-
-        url: {
-            type: String,
-            // required: true
-        }
+        type:String
 
     },
     short_name: {

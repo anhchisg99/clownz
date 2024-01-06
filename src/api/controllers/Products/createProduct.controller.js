@@ -1,5 +1,7 @@
 import { productService } from "../../services/index.js";
 import handler from "../../utils/upload_file.js";
+
+
 export default async function createProduct(req, res) {
     try {
 

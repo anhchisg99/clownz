@@ -4,6 +4,7 @@ import Order from './order.model.js'
 import Cart from './cart.model.js'
 import Category from './category.model.js'
 import SubCategory from './subCategory.model.js'
+import Bottom from './bottom.model.js'
 
 
 export { 
@@ -12,5 +13,6 @@ export {
     Order,
     Cart,
     Category,
-    SubCategory
+    SubCategory,
+    Bottom,
 }

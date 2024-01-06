@@ -8,6 +8,6 @@ const orderSchema = new Schema({
     userId:Number,
     shipping:Object,
     payment:Object,
-    products: Array
+    list_items: Array
 })
 export default mongoose.model('Order',orderSchema)

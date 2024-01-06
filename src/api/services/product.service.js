@@ -68,3 +68,23 @@ export async function getPerProduct(_id){
     }
 }
 
+export async function filterProduct(category,price_options){
+    try {
+        let filter =  {}
+        const _category = await getPerCategory(category)
+        if(price_options.length === 0){
+            price_options = null
+        }
+        if(category){
+            filter['category'] = _category._id
+        }
+        if(price_options){
+            filter['$and'] = price_options
+        }
+        console.log(`filter: ${filter.category}`)
+        return await Product.find(filter)
+    } catch (error) {
+        console.log(error.message)
+        
+    }
+}

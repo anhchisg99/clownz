@@ -17,3 +17,12 @@ export async function getPerCategory(name){
         
     }
 }
+export async function getAllCategory()  {
+    try {
+        // console.log(name)
+        return await Category.find()
+    } catch (error) {
+        console.log(error.message)
+        
+    }
+}
