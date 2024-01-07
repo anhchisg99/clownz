@@ -9,8 +9,9 @@ import mongoose from 'mongoose'
 import createError from 'http-errors'
 import route from './api/routes/index.js'
 
-mongoose.connect('mongodb://localhost:27017/test')
-
+// mongoose.connect('mongodb://localhost:27017/test')
+mongoose.connect(process.env.MONGO_URI)
+    
 app.use(cors())
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended:true }))

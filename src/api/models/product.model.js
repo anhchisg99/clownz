@@ -33,8 +33,15 @@ const productSchema = new Schema({
             price:Number
         }
     ]   , 
-    // color:{type:String},
-    // size: { type: String, enum: ["S", "M", "L"] }
+    tag:{
+        type:String
+    },
+    thumbnail:{
+        type:String
+    },
+    stock:{
+        type:String
+    }
 }, { timestamps: true })
 
 productSchema.virtual('finalPrice').get(function () {

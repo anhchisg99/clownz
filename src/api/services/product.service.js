@@ -19,7 +19,7 @@ export async function createProduct(product){
             category: product.category,
             subCategory: product.subCategory,
             size:product.size,
-            image:product.image 
+            thumbnail:product.image 
         }
         if(product.isVariant){
             product_list["variantions"] = product.variantions
