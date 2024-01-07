@@ -29,7 +29,7 @@ export default async function Register(req, res, next) {
         throw createError[403]
 
       }
-      console.log(isCreate)
+    //   console.log(isCreate)
       const accessToken = await jwt_servcie.signAccessToken(isCreate._id)
       res.json({
         status: "okey",
