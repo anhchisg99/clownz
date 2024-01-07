@@ -5,6 +5,7 @@ import Cart from './cart.model.js'
 import Category from './category.model.js'
 import SubCategory from './subCategory.model.js'
 import Bottom from './bottom.model.js'
+import Admin from './admin.model.js'
 
 
 export { 
@@ -15,4 +16,5 @@ export {
     Category,
     SubCategory,
     Bottom,
+    Admin,
 }
