@@ -9,12 +9,14 @@ import mongoose from 'mongoose'
 import createError from 'http-errors'
 import route from './api/routes/index.js'
 
-if(process.env.PRODUCTION === 'production'){
-    mongoose.connect(process.env.MONGO_URI)
-}else{
+// if(process.env.PRODUCTION === 'production'){
+//     mongoose.connect(process.env.MONGO_URI)
+// }else{
 
-    mongoose.connect('mongodb://localhost:27017/test')
-}
+//     mongoose.connect('mongodb://localhost:27017/test')
+// }
+
+mongoose.connect(process.env.MONGO_URI)
 
 app.use(cors())
 // parse application/x-www-form-urlencoded
