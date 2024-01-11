@@ -1,24 +1,11 @@
-# Clownz
+# Clownz App
 
-clowz is website for testing and shopping webiste
+This project was generated with latest version
 
-## installation
 
-use the package manager 
+## Development server
 
-```bash
-npm install 
-```
-
-## Usage
-
-```
-#install libraries
-npm i 
-
-#run the app
-npm run dev
-```
+Run `npm install` and `npm run dev` for a dev server. Navigate to `http://localhost:3002/`. The app will automatically reload if you change any of the source files.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first
