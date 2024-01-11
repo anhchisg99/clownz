@@ -35,11 +35,9 @@ app.use(bodyParser.json())
  *          200:
  *              description: testing
  */
-
 app.get('/',(req,res)=>{
-    res.send('success !!!')
+    res.send('success !!')
 })
-
 // router
 route(app)
 
